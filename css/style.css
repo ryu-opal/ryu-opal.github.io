@@ -1,0 +1,94 @@
+/* style.css */
+body, html { 
+    font-family: "LINE Seed JP";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 300vh;  
+}
+
+.main-background{ 
+    background-position: -15px -25px; 
+    background-color: #efefef; 
+    background-image: url(../image/bg_image1.png); 
+    background-repeat: repeat; 
+    background-origin: border-box; 
+    background-size: 52px, 52px; 
+}
+
+.main-header{ 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    height: 60px; 
+    background-color: transparent; 
+    z-index: 100; 
+}
+
+.introduce-screen{ 
+    display: block; 
+    margin-top: 60px; 
+    height: 100vh; 
+    width: 100%; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.iroha-kodi-main{ 
+    display: flex; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.iroha-kodi-main img{  
+    display: block; 
+    width: 85%; 
+    height: auto; 
+    max-width: 2100px; 
+    padding-top: 15%; 
+    margin: 0; 
+}
+
+.iroha-kodi-main-title1 { 
+    position: absolute; 
+    color: #21647d;
+    top: 30%; 
+    left: 25%; 
+    font-size: 6rem; 
+    transform: translate(-50%, -50%); 
+} 
+
+.iroha-kodi-main-title2 { 
+    position: absolute; 
+    color: #21647d;
+    top: 32%; 
+    left: 72%; 
+    font-size: 6rem; 
+    transform: translate(-50%, -50%); 
+}
+
+.boarder-text { 
+    position: absolute; 
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    display: inline-block; 
+    width: fit-content;
+    background-color: #ff6459;
+    color: white;  
+    letter-spacing: 3px; 
+    font-size: 10rem;  
+    text-shadow: none; 
+    margin: 0; 
+    line-height: 0.73; 
+    padding: 0; 
+    vertical-align: middle; 
+    padding-bottom: 16px; 
+    margin-top: -30px; 
+} 
