@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <%- partial('_partial/head') %>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
-      </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
+
+<body class="main-background">
+  <%- partial('_partial/header') %>
+  
+  <div class="main-content">
+    <%- body %> 
   </div>
+
+  <%- partial('_partial/footer') %>
+  
+  <!-- 就是這裡！加這一行，把 after-footer 邀請進來 -->
+  <%- partial('_partial/after-footer') %>
+  
+  <%- js('js/script.js') %>
 </body>
 </html>
